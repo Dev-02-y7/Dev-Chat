@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Dev Chat</title>
+
+  <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+  <div class="app">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-header">
+
+        <h2>Dev Chat</h2>
+
+      </div>
+
+      <!-- USER LOGIN -->
+
+      <div class="join-card">
+
+        <h3>Join the chat</h3>
+
+        <div class="input-group">
+
+        <input
+            type="text"
+            id="usernameInput"
+            placeholder="Enter username"
+        >
+
+        </div>
+
+        <button id="joinBtn">
+        Join
+        </button>
+        
+        </div>
+
+      <!-- USERS LIST -->
+
+      <div class="users-section">
+
+        <div class="users-header">
+
+        <h3>Online Users</h3>
+
+        <span id="onlineCount">
+            0
+        </span>
+
+     </div>
+
+        <ul id="usersList"></ul>
+
+      </div>
+
+    </aside>
+
+    <!-- CHAT AREA -->
+
+    <main class="chat-area">
+
+      <!-- CHAT HEADER -->
+
+      <div class="chat-header">
+
+        <h3 id="activeChat">
+          Select a user
+        </h3>
+
+      </div>
+
+      <!-- MESSAGES -->
+
+      <div id="messages">
+
+        <div class="empty-chat">
+
+            <h1>
+            Welcome to Dev Chat
+            </h1>
+
+            <p>
+            Select a user to start chatting
+            </p>
+
+        </div>
+
+        </div>
+
+      <!-- TYPING -->
+
+      <div id="typingIndicator"></div>
+
+      <!-- INPUT -->
+
+      <form id="messageForm">
+
+        <input
+          type="text"
+          id="messageInput"
+          placeholder="Type message..."
+          required
+        >
+
+        <button type="submit">
+          Send
+        </button>
+
+      </form>
+
+    </main>
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
