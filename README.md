@@ -1,6 +1,7 @@
 Dev Chat
 
-Dev Chat is a real-time private messaging application inspired by modern chat platforms like WhatsApp and Discord. I built this project to learn how real-time systems work and how frontend and backend applications communicate using WebSockets.
+Dev Chat is a real-time private messaging application inspired by modern chat platforms like WhatsApp and Discord. I built this project to learn how real-time systems work and how frontend and backend applications communicate using WebSockets.<img width="509" height="256" alt="Screenshot 2026-05-25 104320" src="https://github.com/user-attachments/assets/a4f8b198-cd4b-43a4-b9c1-3218387b0128" />
+
 
 Features -
 
